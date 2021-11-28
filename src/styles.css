@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  border-top: 5px solid rgb(139, 4, 206);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.App-dark {
+  font-family: sans-serif;
+  text-align: center;
+  border-top: 5px solid rgb(139, 4, 206);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(55, 55, 55);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background-color: transparent;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.dark-button {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid rgb(139, 4, 206);
+  color: rgb(139, 4, 206);
+  padding: 0 5px;
+  height: 40px;
+  width: 100px;
+}
+
+.searchbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: rgb(139, 4, 206);
+}
+
+.heavy {
+  font-weight: 700;
+}
+
+input:focus {
+  outline: none;
+}
+
+.searchbar {
+  width: 70%;
+  padding: 7px;
+  color: rgb(139, 4, 206);
+  border-radius: 20px;
+  border: none;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 35%;
+  min-width: 400px;
+}
+
+.search-button {
+  margin-left: 25%;
+  border-left: 1px solid;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(87, 46, 229);
+}
+
+.autocomplete-container {
+  width: 50%;
+}
+
+.autocomplete {
+  margin: 4px 0;
+  background-color: rgba(86, 46, 229, 0.857);
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.results {
+  margin-top: 60px;
+  color: rgb(139, 4, 206);
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+}
+
+.gif-container {
+  background-color: rgb(231, 231, 231);
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gif {
+  object-fit: cover;
+}
+
+.link {
+  max-height: 400px;
+  width: 32%;
+  cursor: pointer;
+  margin-top: 2%;
+  display: flex;
+}
+
+/* Estilos dark mode */
+
+.App.dark {
+  background-color: rgb(55, 55, 55);
+}
+
+.App-dark .dark-button {
+  background-color: rgb(55, 55, 55);
+  border-radius: 20px;
+  border: 1px solid white;
+  color: white;
+  padding: 0 5px;
+  height: 40px;
+  width: 100px;
+}
+
+.App-dark .title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+
+.App-dark .searchbar {
+  width: 70%;
+  padding: 7px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(55, 55, 55);
+}
+
+.App-dark .search {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 35%;
+  min-width: 400px;
+}
+
+.App-dark .search-button {
+  margin-left: 25%;
+  border-left: 1px solid white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(87, 46, 229);
+}
+
+.App-dark .results {
+  margin-top: 60px;
+  color: white;
+}
+
+.App-dark .gif-container {
+  background-color: rgb(33, 33, 33);
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* media query */
+
+@media screen and (max-width: 900px) {
+  .gif-container {
+    width: 100%;
+  }
+
+  .gif-container-dark {
+    width: 100%;
+  }
+
+  .App-dark .gif-container {
+    width: 100%;
+  }
+
+  .App-dark .gif-container-dark {
+    width: 100%;
+  }
+}
